@@ -1,0 +1,173 @@
+:root {
+  --primary-font-family: "Roboto", sans-serif;
+  --primary-text-color-dark: #212121;
+  --secondary-text-color-light: #757575;
+  --logo-font-family: "Raleway", sans-serif;
+  --logo-color-first: #2196f3;
+  --logo-color-second: #000;
+  --nav-active-page-color: #2196f3;
+  --nav-accent-color: #2196f3;
+  --body-background-color: #ffffff;
+  --body-background-color-dark: #2f303a;
+  --main-title-text-color: #ffffff;
+  --button-color: #2196f3;
+  --button-hover-color: #188ce8;
+  --team-background-color: #e5e5e5;
+  --logo-color-footer: #ffff;
+}
+
+.body {
+  font-family: var(--primary-font-family);
+  color: var(--primary-text-color-dark);
+  background-color: var(--body-background-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* ######################    header section   ####################*/
+.logo {
+  font-family: var(--logo-font-family);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-color-first {
+  color: var(--logo-color-first);
+}
+.logo-color-second {
+  color: var(--logo-color-second);
+}
+.nav-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* підсвічування посилання активної сторінки іншим кольором:  */
+.current-nav-list-item {
+  color: var(--nav-active-page-color);
+}
+.nav-list-link {
+  color: var(--primary-text-color-dark);
+}
+.nav-list-link:hover,
+.nav-list-link:focus {
+  color: var(--nav-accent-color);
+}
+.contact-list-link {
+  color: var(--secondary-text-color-light);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contact-list-link:hover,
+.contact-list-link:focus {
+  color: var(--nav-accent-color);
+}
+/* ######################    section  whith button    ####################*/
+.section-button {
+  background-color: var(--body-background-color-dark);
+}
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-title-text-color);
+}
+.modal-btn {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-title-text-color);
+  background-color: var(--button-color);
+}
+.modal-btn:hover,
+.modal-btn.focus {
+  background-color: var(--button-hover-color);
+}
+/* ######################    section  our qualities    ####################*/
+.qualities-header {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.qualities-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color-light);
+}
+.work-header {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* ######################    section  our team    ####################*/
+.team-section {
+  background-color: var(--team-background-color);
+}
+.team-header {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.person-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.person-position {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color-light);
+}
+/* ######################    section  footer    ####################*/
+.footer {
+  background-color: var(--body-background-color-dark);
+}
+.logo-color-footer {
+  color: var(--logo-color-footer);
+}
+.address-text {
+  font-style: normal;
+}
+.contact-address-link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-title-text-color);
+}
+.contact-address-link:hover,
+.contact-address-link:focus {
+  color: var(--nav-accent-color);
+}
