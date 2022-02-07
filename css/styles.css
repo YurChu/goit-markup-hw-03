@@ -12,8 +12,10 @@
   --main-title-text-color: #ffffff;
   --button-color: #2196f3;
   --button-hover-color: #188ce8;
-  --team-background-color: #e5e5e5;
+  --team-background-color: #f5f4fa;
   --logo-color-footer: #ffff;
+
+  --portfolio-btn-color: #f5f4fa;
 }
 
 .body {
@@ -73,7 +75,7 @@
 .contact-list-link:focus {
   color: var(--nav-accent-color);
 }
-/* ######################    section  whith button    ####################*/
+/* ######################    section hero  whith button    ####################*/
 .section-button {
   background-color: var(--body-background-color-dark);
 }
@@ -170,4 +172,36 @@
 .contact-address-link:hover,
 .contact-address-link:focus {
   color: var(--nav-accent-color);
+}
+/* ################################################################ */
+/* ######################    portfolio  page    ####################*/
+.portfolio-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color-dark);
+  background-color: var(--portfolio-btn-color);
+  display: flex;
+  align-items: center;
+  border: none;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  background-color: var(--button-color);
+  color: var(--main-title-text-color);
+}
+.portfolio-item-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-item-description {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color-light);
 }
