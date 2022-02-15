@@ -26,6 +26,28 @@ body {
   background-color: var(--body-background-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .list {
   list-style: none;
 }
@@ -34,7 +56,30 @@ body {
   text-decoration: none;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  padding: 94px 0;
+}
 /* ######################    header section   ####################*/
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ececec;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
 .logo {
   font-family: var(--logo-font-family);
   font-weight: bold;
@@ -47,14 +92,20 @@ body {
 }
 .logo-color-second {
   color: var(--logo-color-second);
+  margin-right: 93px;
 }
 .nav-list {
+  display: flex;
+  width: 294px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-right: 330px;
 }
-
+.nav-list-item:not(:last-child) {
+  margin-right: 50px;
+}
 /* підсвічування посилання активної сторінки іншим кольором:  */
 .current-nav-list-item {
   color: var(--nav-active-page-color);
@@ -66,12 +117,19 @@ body {
 .nav-list-link:focus {
   color: var(--nav-accent-color);
 }
+.contact-header {
+  display: flex;
+  align-items: center;
+}
 .contact-list-link {
   color: var(--secondary-text-color-light);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.contact-list-link:not(:last-child) {
+  margin-right: 50px;
 }
 .contact-list-link:hover,
 .contact-list-link:focus {
@@ -80,8 +138,17 @@ body {
 /* ######################    section hero  whith button    ####################*/
 .section-button {
   background-color: var(--body-background-color-dark);
+  height: 600px;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 .main-title {
+  width: 696px;
+  height: 120px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -89,6 +156,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-text-color);
+  margin-top: 104px;
 }
 .modal-btn {
   font-family: inherit;
@@ -97,22 +165,42 @@ body {
   line-height: 1.87;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--main-title-text-color);
   background-color: var(--button-color);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
 }
 .modal-btn:hover,
 .modal-btn.focus {
   background-color: var(--button-hover-color);
 }
 /* ######################    section  our qualities    ####################*/
+.qualities-list {
+  display: flex;
+  margin-bottom: 94px;
+}
+.qualities-item {
+  display: block;
+  width: 270px;
+  height: 101px;
+}
+.qualities-item:not(:last-child) {
+  margin-right: 30px;
+}
 .qualities-header {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .qualities-text {
   font-size: 14px;
@@ -126,6 +214,12 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.work-list {
+  display: flex;
+  width: 1170px;
+  justify-content: space-between;
 }
 /* ######################    section  our team    ####################*/
 .team-section {
@@ -137,6 +231,19 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+}
+.team-item {
+  display: block;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 .person-header {
   font-weight: 500;
@@ -144,6 +251,7 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 30px;
 }
 .person-position {
   font-size: 16px;
@@ -151,16 +259,22 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color-light);
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 /* ######################    section  footer    ####################*/
 .footer {
   background-color: var(--body-background-color-dark);
+  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-color-footer {
   color: var(--logo-color-footer);
 }
 .address-text {
   font-style: normal;
+  margin-top: 20px;
 }
 .contact-address-link {
   font-size: 14px;
@@ -172,8 +286,20 @@ body {
 .contact-address-link:focus {
   color: var(--nav-accent-color);
 }
+.address-item {
+  margin-bottom: 9px;
+}
 /* ################################################################ */
 /* ######################    portfolio  page    ####################*/
+.portfolio-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio-buttons :not(:last-child) {
+  margin-right: 8px;
+}
 .portfolio-btn {
   font-family: inherit;
   font-weight: 500;
@@ -186,11 +312,36 @@ body {
   display: flex;
   align-items: center;
   border: none;
+  height: 38px;
+  padding: 6px 22px;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   background-color: var(--button-color);
   color: var(--main-title-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-item {
+  display: flex;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+  width: 370px;
+}
+.portfolio-list :nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.portfolio-list :nth-child(3n + 3) {
+  margin-right: 0;
+}
+.portfolio-item-footer {
+  padding: 20px 24px;
 }
 .portfolio-item-title {
   font-weight: bold;
