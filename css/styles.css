@@ -138,7 +138,8 @@ img {
 /* ######################    section hero  whith button    ####################*/
 .section-button {
   background-color: var(--body-background-color-dark);
-  height: 600px;
+  padding: 200px 0px;
+  text-align: center;
 }
 .button-container {
   display: flex;
@@ -148,7 +149,7 @@ img {
 }
 .main-title {
   width: 696px;
-  height: 120px;
+  margin 0 auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -156,17 +157,16 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-text-color);
-  margin-top: 104px;
 }
 .modal-btn {
   font-family: inherit;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: center; */
   letter-spacing: 0.06em;
   color: var(--main-title-text-color);
   background-color: var(--button-color);
@@ -184,7 +184,7 @@ img {
 /* ######################    section  our qualities    ####################*/
 .qualities-list {
   display: flex;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 .qualities-item {
   display: block;
@@ -207,6 +207,11 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color-light);
+}
+/* ###############################    section our work    ################ */
+.section-work {
+  padding-top: 0px;
+  padding-bottom: 94px;
 }
 .work-header {
   font-weight: bold;
@@ -238,6 +243,7 @@ img {
 }
 .team-item {
   display: block;
+  background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -289,6 +295,9 @@ img {
 .address-item {
   margin-bottom: 9px;
 }
+.list-address :last-child {
+  margin-bottom: 0px;
+}
 /* ################################################################ */
 /* ######################    portfolio  page    ####################*/
 .portfolio-buttons {
@@ -331,7 +340,6 @@ img {
   display: flex;
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
   width: 370px;
 }
 .portfolio-list :nth-last-child(-n + 3) {
@@ -342,6 +350,9 @@ img {
 }
 .portfolio-item-footer {
   padding: 20px 24px;
+  border-left:  1px solid #eeeeee;
+  border-right:  1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .portfolio-item-title {
   font-weight: bold;
