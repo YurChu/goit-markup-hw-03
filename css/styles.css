@@ -111,7 +111,7 @@ img {
   height: 600px;
 }
 .hero-container {
-  padding-left,
+  padding-left: 15px;
   padding-right: 15px;
   flex-direction: column;
   justify-content: center;
@@ -152,7 +152,7 @@ img {
   padding: 120px 0;
 }
 .feature-container {
-  padding-left,
+  padding-left: 15px;
   padding-right: 15px;
 }
 .visually-hidden {
@@ -195,7 +195,6 @@ img {
 .team-container {
   padding: 0 15px;
   flex-direction: column;
-  
 }
 .team-header {
   font-size: 36px;
@@ -247,7 +246,6 @@ img {
 .portfolio-container {
   padding: 0 15px;
   flex-direction: column;
-  
 }
 .header-portfolio {
   color: #2e2f42;
@@ -292,10 +290,7 @@ img {
   padding: 100px 0;
 }
 .footer-container {
-  display: flex;
   flex-direction: column;
-  padding: 0 15px;
-  
 }
 .footer-logo {
   display: inline-block;
@@ -307,7 +302,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-
 }
 .footer-logo .logo-word {
   color: #f4f4fd;
