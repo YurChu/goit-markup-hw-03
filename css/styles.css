@@ -290,7 +290,9 @@ img {
   padding: 100px 0;
 }
 .footer-container {
-  flex-direction: column;
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 .footer-logo {
   display: inline-block;
@@ -312,5 +314,3 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
-
-/* Section 1 */
