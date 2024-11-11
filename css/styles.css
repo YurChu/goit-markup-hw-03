@@ -38,9 +38,9 @@ img {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-  display: flex;
 }
 .header-container {
+  display: flex;
   justify-content: space-between;
 }
 .logo {
@@ -111,6 +111,7 @@ img {
   height: 600px;
 }
 .hero-container {
+  display: flex;
   padding-left: 15px;
   padding-right: 15px;
   flex-direction: column;
@@ -152,6 +153,7 @@ img {
   padding: 120px 0;
 }
 .feature-container {
+  display: flex;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -193,6 +195,7 @@ img {
   padding: 120px 0;
 }
 .team-container {
+  display: flex;
   padding: 0 15px;
   flex-direction: column;
 }
@@ -244,6 +247,7 @@ img {
   padding: 120px 0;
 }
 .portfolio-container {
+  display: flex;
   padding: 0 15px;
   flex-direction: column;
 }
@@ -289,11 +293,7 @@ img {
   background-color: #2e2f42;
   padding: 100px 0;
 }
-.footer-container {
-  max-width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
+
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
